@@ -12,14 +12,38 @@
   font-size: 14px;
 }
 
-.header__info-link {
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-item {
+  position: relative;
   margin-right: 35px;
-  padding: 10px 0 10px 0;
-  transition: all 0.2s ease-in;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.header__menu-item:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu-item {
+  width: 90px;
+}
+
+.header__link {
+  display: block;
+  padding: 5px 0 5px 0;
 
   &:hover {
     transition: all 0.2s ease-in;

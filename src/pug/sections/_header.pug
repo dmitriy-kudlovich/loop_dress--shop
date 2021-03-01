@@ -2,17 +2,38 @@
     .container
         section.header__top
             .header__info
-                a(href="#!").header__info-link Для мужчин
-                a(href="#!").header__info-link Для женщин
-                a(href="#!").header__info-link Для детей
+                ul.header__menu
+                    li.header__menu-item Для мужчин ▼
+                        ul.sub-menu
+                            li.sub-menu-item
+                                a(href="#!").header__link Рубашки
+                            li.sub-menu-item
+                                a(href="#!").header__link Брюки
+                            li.sub-menu-item
+                                a(href="#!").header__link Обувь
+                    li.header__menu-item Для женщин ▼
+                        ul.sub-menu
+                            li.sub-menu-item
+                                a(href="#!").header__link Рубашки
+                            li.sub-menu-item
+                                a(href="#!").header__link Брюки
+                            li.sub-menu-item
+                                a(href="#!").header__link Обувь
+                    li.header__menu-item Для детей ▼
+                        ul.sub-menu
+                            li.sub-menu-item
+                                a(href="#!").header__link Рубашки
+                            li.sub-menu-item
+                                a(href="#!").header__link Брюки
+                            li.sub-menu-item
+                                a(href="#!").header__link Обувь    
             a(href="index.html").logo
                 img(src="img/logo.png" alt="logo").logo__img
                 p.logo__text THE LOOP
-            .header__info
-                a(href="#!").header__info-link Оплата
-                a(href="#!").header__info-link Доставка
-            .header__info
-
+            .header__menu
+                a(href="#!").header__link.header__menu-item Оплата
+                a(href="#!").header__link.header__menu-item Доставка
+            .header__menu
                 button.header__button
                     span(class="material-icons button__icon") shopping_basket
                 .header__info-counter 
