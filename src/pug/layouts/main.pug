@@ -1,0 +1,30 @@
+block variables
+
+include ../mixins/_card.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel="stylesheet" href="css/main.css")
+
+        // Подключение шрифтов
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet")
+
+        // Подключение Google-иконок
+        link(href="libs/fontawesome-free-5.15.2-web/css/all.min.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet")
+    body
+
+        include ../sections/_header.pug
+
+        .main
+            block content
+
+        include ../sections/_footer.pug
+
+        script(src="js/main.js")
